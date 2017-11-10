@@ -26,7 +26,7 @@ class Bootstrap4Preset extends Preset
     protected static function updatePackageArray(array $packages)
     {
         return [
-            'bootstrap' => '^4.0.0-beta',
+            'bootstrap' => '^4.0.0-beta.2',
             'popper.js' => '^1.12.5',
             'jquery' => '^3.2.1',
         ] + Arr::except($packages, ['bootstrap-sass', 'jquery']);
@@ -35,8 +35,8 @@ class Bootstrap4Preset extends Preset
     protected static function updateStyles()
     {
         (new Filesystem)->deleteDirectory(resource_path('assets/sass'));
-        //(new Filesystem)->delete(public_path('js/app.js'));
-        //(new Filesystem)->delete(public_path('css/app.css'));
+        (new Filesystem)->delete(public_path('js/app.js'));
+        (new Filesystem)->delete(public_path('css/app.css'));
 
         if (! file_exists(resource_path('assets/sass'))) {
             mkdir(resource_path('assets/sass'));
