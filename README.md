@@ -2,6 +2,8 @@
 
 Bootstrap 4 scaffolding on new Laravel 5.5.x project.
 
+*Now compatable with Bootstrap v4 beta 2.*
+
 ## Installation
 
 You can install the package via composer:
@@ -15,6 +17,7 @@ Basic scaffolding:
 Basic scaffolding and authorisation views:
 `php artisan preset bootstrap4-auth`
 
+*If you run the authorisation scaffolding command multiple time, duplicate entries in the routes files will appear*
+
 Then install and run a build to compile the assets:
 `npm install && npm run dev`
-
