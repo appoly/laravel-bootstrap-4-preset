@@ -2,7 +2,7 @@
 
 Bootstrap 4 scaffolding on new Laravel 5.5.x project.
 
-*Now compatable with Bootstrap v4 beta 2.*
+*Now compatable with Bootstrap v4 stable.*
 
 ## Installation
 
