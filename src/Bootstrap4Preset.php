@@ -26,8 +26,8 @@ class Bootstrap4Preset extends Preset
     protected static function updatePackageArray(array $packages)
     {
         return [
-            'bootstrap' => '^4.0.0-beta.2',
-            'popper.js' => '^1.12.5',
+            'bootstrap' => '^4.0.0',
+            'popper.js' => '^1.12.9',
             'jquery' => '^3.2.1',
         ] + Arr::except($packages, ['bootstrap-sass', 'jquery']);
     }
